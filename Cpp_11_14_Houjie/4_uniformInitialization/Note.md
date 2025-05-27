@@ -48,3 +48,8 @@ public:
 MyClass obj{5, 1.0}; // 期望调用第一个构造函数，但实际因第二个存在会报错，因涉及窄化转换
 ``` 
 不过若用空大括号初始化，且类同时有默认构造函数和 `std::initializer_list` 重载构造函数 ，则调用默认构造函数，如 `MyClass obj{};`  。 
+
+
++ uniform initialization测试：
+
+![](image/resultUniformInitialization.png)
